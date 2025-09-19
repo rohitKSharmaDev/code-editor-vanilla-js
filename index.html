@@ -11,13 +11,12 @@
   <header>
     <div class="container row">
       <div class="brand">
-        <div class="logo">
-          
+        <div class="row">
+          <div class="logo"></div>
+          <div class="title">
+            Code Editor - Live in the Browser
+          </div>
         </div>
-        <div class="title">
-          Code Editor - Live in the Browser
-        </div>
-
 
         <div class="row">
           <button class="btn secondary" id="savebtn" title="Save work locally">
@@ -84,7 +83,7 @@
 
         <div class="stack">
           <h3>Preview</h3>
-          <iframe id="preview" class="preivew" sandbox="allow-scripts allow-same-origin allow-modals allow-forms"></iframe>
+          <iframe id="preview" class="preview" sandbox="allow-scripts allow-same-origin allow-modals allow-forms"></iframe>
         </div>
 
       </div>
@@ -102,16 +101,16 @@
           Run with tests
         </button>
 
-        <button class="btn secondary" id="clearLog">
+        <button class="btn secondary err" id="clearLog">
           Clear log
         </button>
-
-        <h3>Notes</h3>
-        <ul class="muted">
-          <li>Everything runs inside the browser in a sandbox.</li>
-          <li>You canz save the work as a JSON file and restore it.</li>
-        </ul>
       </div>
+
+      <h3 style="margin-top: 20px;">Notes</h3>
+      <ul class="muted">
+        <li>Everything runs inside the browser in a sandbox.</li>
+        <li>You canz save the work as a JSON file and restore it.</li>
+      </ul>
     </aisde>
   </main>
 
